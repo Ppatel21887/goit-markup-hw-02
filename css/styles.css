@@ -1,0 +1,233 @@
+/* GENERAL STYLES*/
+:root {
+  --webstudio-color: #2196f3;
+  --text-color: #757575;
+  --black-color: #212121;
+  --white-color: #ffffff;
+  --rgba-color: rgba(255, 255, 255, 0.6);
+  --border-color: #ff6347;
+  --button-color: #f5f4fa;
+}
+.body {
+  color: var(--black-color);
+  font-family: "roboto", "sans-serif";
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.button {
+  color: var(--webstudio-color);
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.center-text {
+  text-align: center;
+}
+/* STYLING FOR HEADER*/
+
+.button-studio {
+  color: var(--webstudio-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.button-portfolio {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.button-contacts {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.link-email {
+  color: var(--webstudio-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 00.02em;
+}
+
+.link-tel {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 00.02em;
+}
+
+/*STYLING FOR MAIN*/
+/*SECTION-1*/
+.title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.button-click {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--webstudio-color);
+}
+/*SECTION-2*/
+.text {
+  color: var(--text-color);
+}
+/*FOOTER*/
+
+.bottom {
+  background-color: var(--black-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: var(--white-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.email {
+  color: var(--rgba-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.phone {
+  color: var(--rgba-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/*STYLING FOR POINTER & BORDER COLOR WHEN HOVERING OR FOCUSING */
+
+header:hover,
+header:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+}
+a:hover,
+a:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+main:hover,
+main:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+}
+h1:hover,
+h1:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+button:hover,
+button:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  cursor: pointer;
+  color: var(--white-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+h2:hover,
+h2:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+h3:hover,
+h3:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+p:hover,
+p:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--webstudio-color);
+}
+img:hover,
+img:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+}
+footer:hover,
+footer:focus {
+  border-style: solid;
+  border-color: var(--border-color);
+}
+/*end of styling for page 1*/
+/*PAGE 2*/
+/*STYLING FOR HEADER*/
+
+.button-studio-pf {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+
+.button-portfolio-pf {
+  color: var(--webstudio-color);
+  text-decoration: underline;
+}
+.link-email-pf {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+/*STYLING FOR BUTTONS*/
+.button-click-pf {
+  background-color: var(--button-color);
+  text-decoration: underline;
+  border: none;
+}
+
+.black:hover,
+.black:focus {
+  color: var(--black-color);
+}
+/*END FOR NOW*/
