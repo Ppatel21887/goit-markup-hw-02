@@ -1,9 +1,10 @@
 /* GENERAL STYLES*/
 :root {
-  --webstudio-color: #2196f3;
-  --text-color: #757575;
-  --black-color: #212121;
-  --white-color: #ffffff;
+  --logo-color: #2196f3;
+  --text-main-color: #757575;
+  --title-main-color: #212121;
+  --title-bg-color: #2f303a;
+  --title-second-color: #ffffff;
   --rgba-color: rgba(255, 255, 255, 0.6);
   --border-color: #ff6347;
   --button-color: #f5f4fa;
@@ -13,221 +14,189 @@
   font-family: "roboto", "sans-serif";
   font-style: normal;
   line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
-.button {
-  color: var(--webstudio-color);
+li {
+  list-style: none;
+}
+
+.logo {
+  color: var(--logo-color);
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: calc(31 / 26);
 }
 
 .center-text {
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
 }
+
+a {
+  text-decoration: none;
+}
+
 /* STYLING FOR HEADER*/
 
-.button-studio {
-  color: var(--webstudio-color);
+.header-navigation-link {
+  color: var(--title-main-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+/*I added latter-spacing for the ones
+that are given different in body figma page. 
+& also for footer*/
+.header-navigation-link:hover,
+.header-navigation-link :focus {
+  color: var(--logo-color);
+}
 
-.button-portfolio {
-  color: var(--black-color);
+.current {
+  color: var(--logo-color);
+}
+
+.header-contact-link {
+  color: var(--text-main-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
+  line-height: calc(16 / 14);
 }
 
-.button-contacts {
-  color: var(--black-color);
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-}
-
-.link-email {
-  color: var(--webstudio-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 00.02em;
-}
-
-.link-tel {
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 00.02em;
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--logo-color);
 }
 
 /*STYLING FOR MAIN*/
 /*SECTION-1*/
-.title {
-  color: var(--white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  background-color: var(--black-color);
+/*HERO SECTION*/
+
+.hero-section {
+  background-color: var(--title-bg-color);
 }
 
-.button-click {
-  color: var(--white-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+.title {
+  color: var(--title-second-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-align: center;
-  background-color: var(--webstudio-color);
+}
+
+.hero-button {
+  color: var(--title-second-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--logo-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--border-color);
 }
 /*SECTION-2*/
-.text {
-  color: var(--text-color);
+
+.feature-title {
+  color: var(--title-main-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
 }
+
+.text {
+  color: var(--text-main-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+
 /*FOOTER*/
 
 .bottom {
-  background-color: var(--black-color);
+  background-color: var(--title-bg-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
-.address {
-  color: var(--white-color);
+.footer-address-link {
+  color: var(--title-second-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
 }
 
-.email {
+.footer-contact-link {
   color: var(--rgba-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
 }
 
-.phone {
-  color: var(--rgba-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
+/*PORTFOLIO PAGE STYLING*/
 
-/*STYLING FOR POINTER & BORDER COLOR WHEN HOVERING OR FOCUSING */
-
-header:hover,
-header:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-}
-a:hover,
-a:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-  text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
-main:hover,
-main:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-}
-h1:hover,
-h1:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-  text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
 button:hover,
 button:focus {
-  border-style: solid;
-  border-color: var(--border-color);
   cursor: pointer;
-  color: var(--white-color);
-  text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
-h2:hover,
-h2:focus {
   border-style: solid;
-  border-color: var(--border-color);
+  border-color: var(--logo-color);
   text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
-h3:hover,
-h3:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-  text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
-p:hover,
-p:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-  text-decoration: underline;
-  text-decoration-color: var(--webstudio-color);
-}
-img:hover,
-img:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-}
-footer:hover,
-footer:focus {
-  border-style: solid;
-  border-color: var(--border-color);
-}
-/*end of styling for page 1*/
-/*PAGE 2*/
-/*STYLING FOR HEADER*/
-
-.button-studio-pf {
-  color: var(--black-color);
-  text-decoration: underline;
+  text-decoration-color: var(--logo-color);
 }
 
-.button-portfolio-pf {
-  color: var(--webstudio-color);
-  text-decoration: underline;
-}
-.link-email-pf {
-  color: var(--text-color);
-  text-decoration: underline;
+.button-click {
+  color: var(--title-second-color);
+  background-color: var(--logo-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
 }
 
-/*STYLING FOR BUTTONS*/
 .button-click-pf {
-  background-color: var(--button-color);
-  text-decoration: underline;
-  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
 }
 
-.black:hover,
-.black:focus {
-  color: var(--black-color);
+.captions {
+  color: var(--title-main-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.text-pf {
+  color: var(--text-main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
 }
 /*END FOR NOW*/

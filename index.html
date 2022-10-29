@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Web Studio</title>
@@ -14,60 +19,68 @@
     <!--Page header-->
     <header>
       <nav>
-        <a class="button" href="./index.html">WebStudio</a>
+        <a class="logo" href="./index.html">WebStudio</a>
 
         <ul>
-          <li><a class="button-studio" href="./index.html">Studio</a></li>
           <li>
-            <a class="button-portfolio" href="./portfolio.html">Portfolio</a>
+            <a class="header-navigation-link current" href="./index.html"
+              >Studio</a
+            >
           </li>
-          <li><a class="button-contacts" href="#">Contacts</a></li>
+          <li>
+            <a class="header-navigation-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li><a class="header-navigation-link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a class="link-email" href="mailto:info@devstudio.com"
+          <a class="header-contact-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="link-tel" href="tel:380961111111">+(38)096-111-11-11</a>
+          <a class="header-contact-link" href="tel:380961111111"
+            >+(38)096-111-11-11</a
+          >
         </li>
       </ul>
     </header>
 
     <main>
-      <section>
+      <section class="hero-section">
         <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button class="button-click" type="button">Request Our Service</button>
+        <button class="hero-button" type="button">Request Our Service</button>
       </section>
 
       <section>
-        <h2 class="center-text feature">Our features</h2>
+        <h2 class="center-text feature">Our Features</h2>
         <ul>
           <li>
-            <h3 class="feature-one">ATTENTION TO DETAILS</h3>
+            <h3 class="feature-title">ATTENTION TO DETAILS</h3>
             <p class="text">
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
           <li>
-            <h3 class="feature-two">PUNCTUALITY</h3>
+            <h3 class="feature-title">PUNCTUALITY</h3>
             <p class="text">
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and respect the agreed deadlines.
             </p>
           </li>
           <li>
-            <h3 class="feature-three">PLANNING</h3>
+            <h3 class="feature-title">PLANNING</h3>
             <p class="text">
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
           <li>
-            <h3 class="feature-four">MODERN TECHNOLOGIES</h3>
+            <h3 class="feature-title">MODERN TECHNOLOGIES</h3>
             <p class="text">
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
@@ -80,7 +93,7 @@
         <ul>
           <li>
             <img
-              src="images/img1.jpg"
+              src="images_studio/img1.jpg"
               alt="person typing"
               width="370"
               height="294"
@@ -88,14 +101,19 @@
           </li>
           <li>
             <img
-              src="images/img2.jpg"
+              src="images_studio/img2.jpg"
               alt="phone and laptop"
               width="370"
               height="294"
             />
           </li>
           <li>
-            <img src="images/img3.jpg" alt="tablet" width="370" height="294" />
+            <img
+              src="images_studio/img3.jpg"
+              alt="tablet"
+              width="370"
+              height="294"
+            />
           </li>
         </ul>
       </section>
@@ -103,36 +121,56 @@
         <h2 class="center-text">Our Team</h2>
         <ul>
           <li>
-            <img src="images/img4.jpg" alt="person" width="270" height="260" />
+            <img
+              src="images_studio/team_member1.jpg"
+              alt="person"
+              width="270"
+              height="260"
+            />
 
-            <h3>Christopher Walker</h3>
+            <h3 class="team-member">Christopher Walker</h3>
             <p class="text">Product Designer</p>
           </li>
           <li>
-            <img src="images/img5.jpg" alt="person" width="270" height="260" />
-            <h3>Kylie Evans</h3>
+            <img
+              src="images_studio/team_member2.jpg"
+              alt="person"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-member">Kylie Evans</h3>
             <p class="text">Frontend Developer</p>
           </li>
           <li>
-            <img src="images/img6.jpg" alt="person" width="270" height="260" />
-            <h3>Ryan Harris</h3>
+            <img
+              src="images_studio/team_member3.jpg"
+              alt="person"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-member">Ryan Harris</h3>
             <p class="text">Marketing</p>
           </li>
           <li>
-            <img src="images/img7.jpg" alt="person" width="270" height="260" />
-            <h3>Tyler Moore</h3>
+            <img
+              src="images_studio/team_member4.jpg"
+              alt="person"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-member">Tyler Moore</h3>
             <p class="text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="bottom">
-      <a class="button" href="./index.html">WebStudio</a>
+      <a class="logo" href="./index.html">WebStudio</a>
       <address>
         <ul>
           <li>
             <a
-              class="address"
+              class="footer-address-link"
               href="https://goo.gl/maps/DN4q7YvNKob1rNXi6"
               target="_blank"
               >695 Park Ave, New York, NY 10065, United States
@@ -140,10 +178,14 @@
           </li>
 
           <li>
-            <a class="email" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-contact-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
           </li>
           <li>
-            <a class="phone" href="tel:12127724150">+1(212)772-4150</a>
+            <a class="footer-contact-link" href="tel:12127724150"
+              >+1(212)772-4150</a
+            >
           </li>
         </ul>
       </address>
