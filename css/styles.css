@@ -5,11 +5,10 @@
   --title-main-color: #212121;
   --title-bg-color: #2f303a;
   --title-second-color: #ffffff;
-  --rgba-color: rgba(255, 255, 255, 0.6);
   --border-color: #ff6347;
   --button-color: #f5f4fa;
 }
-.body {
+body {
   color: var(--black-color);
   font-family: "roboto", "sans-serif";
   font-style: normal;
@@ -148,9 +147,10 @@ that are given different in body figma page.
   font-size: 14px;
   line-height: calc(24 / 14);
 }
-
+/*used variable for white(#FFFFFF) color, I hope that was expected*/
 .footer-contact-link {
-  color: var(--rgba-color);
+  color: var(--title-second-color);
+  opacity: 0.6;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -178,11 +178,17 @@ button:focus {
   text-align: center;
 }
 
-.button-click-pf {
+.button-click-portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
+}
+
+.button-click-portfolio:hover,
+.button-click-portfolio:focus {
+  background-color: var(--logo-color);
+  color: var(--title-second-color);
 }
 
 .captions {
@@ -193,7 +199,7 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-.text-pf {
+.text-portfolio {
   color: var(--text-main-color);
   font-weight: 400;
   font-size: 16px;
